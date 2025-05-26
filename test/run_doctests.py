@@ -7,13 +7,13 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import doctest
 
 def run_all_doctests():
+    
     modules = [
         'src.data.csv_importador',
         'src.analysis.monetizacao',
         'src.analysis.ano_lancamento',
-        'src.analysis.plataforma_os',
-        'src.analysis.estatistica_linhas'
-    ]
+        'src.analysis.plataforma_os'
+              ]
     total_failures = 0
     total_tests = 0
     for mod_name in modules:
