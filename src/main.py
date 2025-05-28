@@ -14,20 +14,20 @@ def main():
         arquivo_csv = '/content/steam_games.csv'
         print("Executando em modo PRODUÇÃO")
 
-importador = CSVImportador(arquivo_csv)
-dados = importador.importar()
-
-# Pergunta 1
-analiseMonetizacao = ModeloMonetizaçãoEstatistica(dados)
-analiseMonetizacao.resumo()
-
-# Pergunta 2
-analiseLancamentoAno = AnoLancamentoEstatistica(dados)
-analiseLancamentoAno.mostrar_anos_mais_lancamentos()
-
-# Pergunta 3
-analisePlataformaOS = PlataformaOSEstatistica(dados)
-analisePlataformaOS.resumo()
+    importador = CSVImportador(arquivo_csv)
+    dados = importador.importar()
+    
+    # Pergunta 1
+    analiseMonetizacao = ModeloMonetizaçãoEstatistica(dados)
+    analiseMonetizacao.resumo()
+    
+    # Pergunta 2
+    analiseLancamentoAno = AnoLancamentoEstatistica(dados)
+    analiseLancamentoAno.mostrar_anos_mais_lancamentos()
+    
+    # Pergunta 3
+    analisePlataformaOS = PlataformaOSEstatistica(dados)
+    analisePlataformaOS.resumo()
 
 if __name__ == "__main__":
     main()
