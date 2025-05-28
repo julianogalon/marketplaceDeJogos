@@ -14,8 +14,8 @@ def main():
         arquivo_csv = '/content/steam_games.csv'
         print("Executando em modo PRODUÇÃO")
 
-    importador = CSVImportador(arquivo_csv)
-    dados = importador.importar()
+importador = CSVImportador(arquivo_csv)
+dados = importador.importar()
 
 # Pergunta 1
 analiseMonetizacao = ModeloMonetizaçãoEstatistica(dados)
